@@ -9,6 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "bower": "1.3.12",
+    "grunt": "0.4.5",
     "grunt-bower-task": "0.4.0",
     "grunt-cli": "0.1.13",
     "grunt-contrib-bump": "gruntjs/grunt-contrib-bump",

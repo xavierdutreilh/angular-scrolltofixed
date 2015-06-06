@@ -1,4 +1,4 @@
-# angular-scrolltofixed [![Build Status](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed.svg)](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed)
+# angular-scrolltofixed [![Build Status](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed.svg?branch=master)](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed)
 
 > AngularJS directive for [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
 

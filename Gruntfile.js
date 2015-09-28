@@ -2,67 +2,67 @@
 
 module.exports = function(grunt) {
   grunt.initConfig({
-    clean: {
-      dist: {
-        src: [
+    'clean': {
+      'dist': {
+        'src': [
           'dist',
         ],
       },
     },
-    bower: {
-      install: {
-        options: {
-          copy: false,
-          verbose: true,
+    'bower': {
+      'install': {
+        'options': {
+          'copy': false,
+          'verbose': true,
         },
       },
     },
-    jshint: {
-      options: {
-        jshintrc: true,
+    'jshint': {
+      'options': {
+        'jshintrc': true,
       },
-      all: {
-        src: [
+      'all': {
+        'src': [
           'Gruntfile.js',
           'src/**/*.js',
         ],
-        nonull: true,
+        'nonull': true,
       },
     },
-    jscs: {
-      all: {
-        src: [
+    'jscs': {
+      'all': {
+        'src': [
           'Gruntfile.js',
           'src/**/*.js',
         ],
-        nonull: true,
+        'nonull': true,
       },
     },
-    concat: {
-      dist: {
-        src: [
+    'concat': {
+      'dist': {
+        'src': [
           'src/**/*.js',
         ],
-        dest: 'dist/angular-scrolltofixed.js',
-        nonull: true,
+        'dest': 'dist/angular-scrolltofixed.js',
+        'nonull': true,
       },
     },
-    uglify: {
-      dist: {
-        src: [
+    'uglify': {
+      'dist': {
+        'src': [
           'src/**/*.js',
         ],
-        dest: 'dist/angular-scrolltofixed.min.js',
-        nonull: true,
+        'dest': 'dist/angular-scrolltofixed.min.js',
+        'nonull': true,
       },
     },
-    bump: {
-      options: {
-        filepaths: [
+    'bump': {
+      'options': {
+        'filepaths': [
           'bower.json',
           'package.json',
         ],
-        commitMessage: 'Bump version to {%= version %}',
+        'commitMessage': 'Bump version to {%= version %}',
       },
     },
   });

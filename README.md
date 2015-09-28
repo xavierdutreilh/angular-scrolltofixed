@@ -33,14 +33,14 @@ And add the directive `scroll-to-fixed` to any element that you want to fix:
 You can specify them via a plain object in your templates:
 
 ```html
-<p scroll-to-fixed="{ bottom: 0 }">Hello, world!</p>
+<p scroll-to-fixed="{ 'bottom': 0 }">Hello, world!</p>
 ```
 
 or a scoped object in your controllers:
 
 ```javascript
 $scope.scrollToFixedOptions = {
-  bottom: 0
+  'bottom': 0
 };
 ```
 

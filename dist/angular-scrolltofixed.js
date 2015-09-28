@@ -3,9 +3,9 @@
 
   function scrollToFixed() {
     return {
-      require: '?ngModel',
-      restrict: 'A',
-      link: function link(scope, element, attrs) {
+      'require': '?ngModel',
+      'restrict': 'A',
+      'link': function link(scope, element, attrs) {
         element.scrollToFixed(scope.$eval(attrs.scrollToFixed));
 
         if (attrs.ngModel) {

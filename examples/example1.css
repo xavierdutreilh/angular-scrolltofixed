@@ -1,0 +1,12 @@
+[scroll-to-fixed] {
+  background-color: black;
+  color: white;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+[scroll-to-fixed].scroll-to-fixed-fixed,
+[scroll-to-fixed].scroll-to-fixed-fixed p {
+  margin-bottom: 0;
+  margin-top: 0;
+}

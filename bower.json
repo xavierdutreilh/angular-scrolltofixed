@@ -20,6 +20,7 @@
   ],
   "ignore": [
     "/.*",
+    "examples",
     "Gruntfile.js",
     "package.json",
     "src"
@@ -27,5 +28,8 @@
   "dependencies": {
     "angular": "~1.3.13",
     "ScrollToFixed": "~1.0.6"
+  },
+  "devDependencies": {
+    "normalize-css": "~3.0.3"
   }
 }

@@ -24,7 +24,17 @@ module.exports = function(grunt) {
       'all': {
         'src': [
           'Gruntfile.js',
+          'karma.conf.js',
           'src/**/*.js',
+        ],
+        'nonull': true,
+      },
+      'test': {
+        'options': {
+          'jshintrc': 'test/.jshintrc',
+        },
+        'src': [
+          'test/**/*.js',
         ],
         'nonull': true,
       },
@@ -33,9 +43,16 @@ module.exports = function(grunt) {
       'all': {
         'src': [
           'Gruntfile.js',
+          'karma.conf.js',
           'src/**/*.js',
+          'test/**/*.js',
         ],
         'nonull': true,
+      },
+    },
+    'karma': {
+      'unit': {
+        'configFile': 'karma.conf.js',
       },
     },
     'concat': {
@@ -70,19 +87,24 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
 
-  grunt.registerTask('prepare', [
-    'concat',
-    'uglify',
+  grunt.registerTask('validate', [
+    'jshint',
+    'jscs',
   ]);
 
   grunt.registerTask('test', [
     'bower',
+    'validate',
+    'karma',
+  ]);
+
+  grunt.registerTask('build', [
+    'concat',
+    'uglify',
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
-    'jscs',
-    'prepare',
     'test',
+    'build',
   ]);
 };

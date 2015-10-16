@@ -7,26 +7,53 @@ describe('scrollToFixed', function() {
   beforeEach(module('scrollToFixed'));
 
   beforeEach(inject(function($injector) {
-    var $compile = $injector.get('$compile');
     var $rootScope = $injector.get('$rootScope');
     $scope = $rootScope.$new();
-
-    spyOn(angular.element.fn, 'scrollToFixed');
-
-    element = $compile('<div scroll-to-fixed>Hello, world!</div>')($scope);
-
-    $scope.$digest();
   }));
 
   describe('functions', function() {
     describe('link', function() {
-      it('should call angular.element.fn.scrollToFixed', function() {
-        expect(angular.element.fn.scrollToFixed).toHaveBeenCalled();
+      var scrollToFixed;
+
+      beforeEach(function() {
+        scrollToFixed = spyOn(angular.element.fn, 'scrollToFixed');
+      });
+
+      describe('when there are options', function() {
+        beforeEach(inject(function($injector) {
+          var $compile = $injector.get('$compile');
+          var template =
+            '<div scroll-to-fixed="{\'bottom\': 0}">' +
+              'Hello, world!' +
+            '</div>';
+          element = $compile(template)($scope);
+        }));
+
+        it('should call angular.element.fn.scrollToFixed', function() {
+          expect(scrollToFixed).toHaveBeenCalledWith({'bottom': 0});
+        });
+      });
+
+      describe('when there are no options', function() {
+        beforeEach(inject(function($injector) {
+          var $compile = $injector.get('$compile');
+          var template = '<div scroll-to-fixed>Hello, world!</div>';
+          element = $compile(template)($scope);
+        }));
+
+        it('should call angular.element.fn.scrollToFixed', function() {
+          expect(scrollToFixed).toHaveBeenCalledWith(undefined);
+        });
       });
     });
   });
 
   describe('events', function() {
+    beforeEach(inject(function($injector) {
+      var $compile = $injector.get('$compile');
+      element = $compile('<div scroll-to-fixed>Hello, world!</div>')($scope);
+    }));
+
     describe('update', function() {
       it('should trigger resize', function(done) {
         element.bind('resize', function() {

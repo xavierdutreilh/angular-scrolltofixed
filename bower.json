@@ -23,7 +23,8 @@
     "examples",
     "Gruntfile.js",
     "package.json",
-    "src"
+    "src",
+    "test"
   ],
   "dependencies": {
     "angular": "~1.3.13",

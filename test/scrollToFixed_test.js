@@ -9,6 +9,7 @@ describe('scrollToFixed', function() {
   beforeEach(inject(function($injector) {
     var $rootScope = $injector.get('$rootScope');
     $scope = $rootScope.$new();
+    $scope.name = 'Alan';
   }));
 
   describe('functions', function() {
@@ -44,6 +45,28 @@ describe('scrollToFixed', function() {
         it('should call angular.element.fn.scrollToFixed', function() {
           expect(scrollToFixed).toHaveBeenCalledWith(undefined);
         });
+      });
+    });
+  });
+
+  describe('watchers', function() {
+    describe('ngModel', function() {
+      beforeEach(inject(function($injector) {
+        var $compile = $injector.get('$compile');
+        var template =
+          '<div scroll-to-fixed ng-model="name">' +
+            'Hello, {{ name }}!' +
+          '</div>';
+        element = $compile(template)($scope);
+      }));
+
+      it('should trigger resize', function(done) {
+        element.bind('resize', function() {
+          done();
+        });
+
+        $scope.name = 'Ada';
+        $scope.$digest();
       });
     });
   });

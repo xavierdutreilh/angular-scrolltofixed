@@ -1,5 +1,6 @@
 {
   "bitwise": true,
+  "browser": true,
   "camelcase": true,
   "curly": true,
   "eqeqeq": true,
@@ -21,7 +22,6 @@
   "plusplus": true,
   "quotmark": "single",
   "strict": true,
-  "browser": true,
   "undef": true,
   "unused": true,
   "globals": {

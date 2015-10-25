@@ -9,7 +9,7 @@ module.exports = function(config) {
       'bower_components/ScrollToFixed/jquery-scrolltofixed.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'src/scrollToFixed.js',
+      'src/*.js',
       'test/**/*_test.js'
     ],
     'exclude': [],

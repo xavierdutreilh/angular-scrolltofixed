@@ -16,7 +16,7 @@
   },
   "license": "MIT",
   "main": [
-    "dist/angular-scrolltofixed.js"
+    "src/scrollToFixed.js"
   ],
   "ignore": [
     "/.*",

@@ -21,7 +21,7 @@
         element.bind('$destroy', function destroy() {
           element.trigger('detach.ScrollToFixed');
         });
-      }
+      },
     };
   }
 

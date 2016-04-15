@@ -1,7 +1,0 @@
-{
-  "preset": "google",
-  "excludeFiles": [
-    "bower_components/**/*",
-    "dist/**/*"
-  ]
-}

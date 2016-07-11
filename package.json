@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.4.1",
-    "eslint": "^2.7.0",
+    "eslint": "^3.0.1",
     "eslint-config-google": "^0.6.0",
     "jasmine-core": "^2.3.4",
     "karma": "^1.1.0",

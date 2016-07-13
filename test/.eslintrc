@@ -1,6 +1,6 @@
 {
-  "extends": "google",
   "env": {
+    "browser": false,
     "jasmine": true
   },
   "globals": {
@@ -8,10 +8,6 @@
     "inject": false
   },
   "rules": {
-    "arrow-parens": ["error", "always"],
-    "comma-dangle": ["error", "always-multiline"],
-    "max-nested-callbacks": ["error", 8],
-    "quote-props": ["error", "consistent"],
-    "require-jsdoc": "off"
+    "max-nested-callbacks": ["error", 8]
   }
 }

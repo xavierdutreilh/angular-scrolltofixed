@@ -22,7 +22,6 @@
     "/.*",
     "examples",
     "package.json",
-    "src",
     "test"
   ],
   "dependencies": {

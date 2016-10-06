@@ -1,7 +1,7 @@
 {
   "name": "angular-scrolltofixed",
   "version": "0.4.1",
-  "description": "AngularJS directive for ScrollToFixed",
+  "description": "An AngularJS directive for ScrollToFixed",
   "author": "Xavier Dutreilh <xavier@dutreilh.com>",
   "license": "MIT",
   "homepage": "https://github.com/xavierdutreilh/angular-scrolltofixed",

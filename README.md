@@ -1,6 +1,6 @@
 # angular-scrolltofixed [![Build Status](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed.svg?branch=master)](https://travis-ci.org/xavierdutreilh/angular-scrolltofixed) [![Dependency Status](https://gemnasium.com/badges/github.com/xavierdutreilh/angular-scrolltofixed.svg)](https://gemnasium.com/github.com/xavierdutreilh/angular-scrolltofixed)
 
-> AngularJS directive for [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
+> An [AngularJS](https://angularjs.org/) directive for [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
 
 ## Installation
 

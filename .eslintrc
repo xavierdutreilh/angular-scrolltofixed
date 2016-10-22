@@ -1,12 +1,6 @@
 {
-  "extends": "google",
-  "env": {
-    "browser": true
-  },
+  "extends": "xavierdutreilh",
   "rules": {
-    "arrow-parens": ["error", "always"],
-    "comma-dangle": ["error", "always-multiline"],
-    "quote-props": ["error", "consistent"],
-    "require-jsdoc": "off"
+    "no-var": "warn"
   }
 }

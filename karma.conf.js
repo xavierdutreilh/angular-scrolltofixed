@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
-function karmaConf(config) {
+function karmaConf (config) {
   config.set({
     'basePath': '',
     'frameworks': [
-      'jasmine',
+      'jasmine'
     ],
     'files': [
       'bower_components/jquery/dist/jquery.js',
@@ -12,22 +12,22 @@ function karmaConf(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'src/*.js',
-      'test/**/*_test.js',
+      'test/**/*_test.js'
     ],
     'exclude': [],
     'preprocessors': {},
     'reporters': [
-      'progress',
+      'progress'
     ],
     'port': 9876,
     'colors': true,
     'logLevel': config.LOG_INFO,
     'autoWatch': false,
     'browsers': [
-      'PhantomJS',
+      'PhantomJS'
     ],
-    'singleRun': true,
-  });
+    'singleRun': true
+  })
 }
 
-module.exports = karmaConf;
+module.exports = karmaConf

@@ -1,6 +1,0 @@
-{
-  "extends": "xavierdutreilh",
-  "rules": {
-    "no-var": "warn"
-  }
-}

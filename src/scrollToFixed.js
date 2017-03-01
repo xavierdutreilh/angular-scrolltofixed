@@ -1,6 +1,4 @@
 (function (angular) {
-  'use strict'
-
   function scrollToFixed () {
     return {
       'require': '?ngModel',

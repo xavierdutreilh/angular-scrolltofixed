@@ -1,5 +1,3 @@
-'use strict'
-
 function karmaConf (config) {
   config.set({
     'basePath': '',

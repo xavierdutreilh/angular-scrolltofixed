@@ -1,8 +1,6 @@
 /* eslint-env jasmine */
 /* global angular:false inject:false */
 
-'use strict'
-
 describe('scrollToFixed', function () {
   var $scope
   var element

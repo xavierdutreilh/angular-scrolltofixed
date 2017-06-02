@@ -6,7 +6,6 @@
   "license": "MIT",
   "homepage": "https://github.com/xavierdutreilh/angular-scrolltofixed",
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "bower": "^1.4.1",
     "jasmine-core": "^2.3.4",

@@ -8,12 +8,12 @@
   "private": true,
   "devDependencies": {
     "bower": "^1.4.1",
-    "jasmine-core": "^2.3.4",
-    "karma": "^1.1.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0",
-    "phantomjs-prebuilt": "^2.1.4",
-    "standard": "^10.0.0"
+    "phantomjs-prebuilt": "^2.1.15",
+    "standard": "^10.0.3"
   },
   "engines": {
     "node": ">= 0.12.0"
